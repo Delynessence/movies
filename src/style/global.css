@@ -1,0 +1,301 @@
+/* Body Background */
+body {
+  height: 100%;
+  background-image: url("../assets/images/23651431_22.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+  
+}
+
+/* Navbar Styles */
+nav {
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+nav h1{
+  display: inline;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+nav ul {
+  display: flex;
+  float: left;
+  margin-top: 10;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 40px;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid #ffffff;
+}
+
+nav ul li a:hover {
+  color: #138dce;
+  border-bottom: 1px solid #138dce;
+}
+
+.menu-icon {
+  /* background-color: tomato; */
+  font-size: 28px;
+  display: none;
+}
+
+main {
+  padding-top: 7rem;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+  }
+
+  .col-md-8{
+    margin-top: 2cm;
+  }
+  
+}
+
+
+
+/* Search Input Styles */
+.search {
+  background-color: white;
+  color: black;
+  border: solid rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+
+.search:hover {
+  background-color: black;
+  color: white;
+  border: solid gray;
+}
+
+/* Card Layout */
+.card {
+  margin-bottom: 20px; /* Add spacing between cards */
+}
+
+/* Ensure correct spacing in grid columns */
+.col-md-4 {
+  padding: 0 15px; /* Adjust padding for spacing */
+}
+
+/* text */
+
+.text-center.mt-10{
+  color: white;
+}
+
+.error h1{
+  color: white;
+}
+
+/* Ensure the body takes up at least 100% of the viewport height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flexbox container for the body to ensure the footer stays at the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content should take up all available space */
+#main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+#pagination {
+  margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* button next/previous */
+
+/* Styling for the Previous button */
+.btn-prev {
+  background-color: whitesmoke;
+  color: #333;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  position: relative;
+  border: 2px solid #252525;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+/* Styling for the Next button */
+.btn-next {
+  background-color: whitesmoke;
+  position: relative;
+  color: #333;
+  padding: 10px 20px;
+  border: 2px solid #252525;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+/* Hover effect for both buttons */
+.btn-prev:hover, .btn-next:hover { 
+  box-shadow: 1px 1px 200px #252525;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border:  2px solid white;
+  
+}
+
+/* Disabled button styling */
+.btn-prev[disabled], .btn-next[disabled] {
+  background-color: #bdc3c7; 
+  color: #7f8c8d;            
+  cursor: not-allowed;       
+}
+
+.btn-page-number {
+  text-shadow: 1px 2px #8d8989;
+  display: inline;
+  border: none;
+  background: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-bottom: 20px
+}
+
+.btn-page-number.btn-primary {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.btn-page-number.btn-secondary {
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+}
+
+
+/* TEST */
+/* Mengatur warna bullet points pada daftar */
+.list-group {
+  list-style-type: disc; /* Pastikan bullet points ditampilkan */
+  padding-left: 1.5em; /* Sesuaikan jarak bullet points */
+}
+
+.list-group li::marker {
+  color: black; /* Ubah warna bullet points menjadi hitam */
+}
+
